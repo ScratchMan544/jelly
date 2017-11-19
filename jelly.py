@@ -1294,7 +1294,7 @@ atoms = {
 	'D': attrdict(
 		arity = 1,
 		ldepth = 0,
-		call = lambda z: to_base(z, 10)
+		call = lambda z: to_base(ord(z) if type(z) == str else z, 10)
 	),
 	'Ḍ': attrdict(
 		arity = 1,
